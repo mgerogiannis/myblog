@@ -1,0 +1,59 @@
+{
+  "main": {
+    "name": "Michail Gerogiannis",
+    "occupation": "Software Engineer",
+    "description": "who has a passion for computer science and enjoys building robust software solutions. Furthermore, I consider myself as a novel lover and an art enthusiast. The closest to me people might say that I'm also a science freak especially with topics that are related to space exploration",
+    "image": "profilepic.jpg",
+    "bio": "I am currently based in the Netherlands, working at Rademaker B.V as a Software Engineer and I bring with me a variety of skills, including programming and application development, using mostly C# and Python. My main interests are focused on Artificial Intelligence, Reinforcement Learning and Cloud based technologies.",
+    "email": "mgerogiannis@outlook.com",
+    "phone": "0030-6947644975",
+    "address": {
+      "street": "Zuiderwal 13",
+      "city": "Culemborg",
+      "state": "Gelderland",
+      "zip": "4101EK"
+    },
+    "resumedownload": "",
+    "social": [
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/MGerogiannis",
+        "className": "fa fa-twitter"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/michail-gerogiannis-8b4a8814b/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/mgerogiannis",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Codenames",
+        "category": "",
+        "image": "codenames.jpg",
+        "url": "https://github.com/mgerogiannis"
+      },
+      {
+        "title": "Machine Learning techniques for predicting tokens in integrated development environments",
+        "category": "",
+        "image": "machinelearning.jpg",
+        "url": "https://github.com/mgerogiannis"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Those who can imagine anything, can create the impossible.",
+        "user": "Alan Turing"
+      }
+    ]
+  }
+}
