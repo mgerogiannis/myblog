@@ -36,7 +36,7 @@
     "projects": [
       {
         "title": "Codenames",
-        "category": "",
+        "category": "An Angular and JAVA based application that simulates the gameplay of the known board game 'Codenames'",
         "image": "codenames.jpg",
         "url": "https://github.com/mgerogiannis"
       },
