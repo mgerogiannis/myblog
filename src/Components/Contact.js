@@ -1,7 +1,32 @@
 import React, { Component } from 'react';
 import emailjs from 'emailjs-com';
+import Recaptcha from 'react-recaptcha';
 
 class Contact extends Component {
+
+   constructor(props) {
+      super(props)
+  
+      this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
+      this.verifyCallback = this.verifyCallback.bind(this);
+  
+      this.state = {
+        isVerified: false
+      }
+    }
+
+    recaptchaLoaded() {
+      console.log('capcha successfully loaded');
+    }
+  
+  
+    verifyCallback(response) {
+      if (response) {
+        this.setState({
+          isVerified: true
+        })
+      }
+    }
   render() {
 
     if(this.props.data){
@@ -72,11 +97,14 @@ class Contact extends Component {
                   </div>
 
                   <div>
-                     <button className="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif" />
-                     </span>
+                     <button disabled={this.state.isVerified === false} className="submit">Submit</button>
                   </div>
+                  <Recaptcha
+                     sitekey="6Lft_skaAAAAAHCTNT8EMq8tnp9GOd80OIU-uNIt"
+                     render="explicit"
+                     onloadCallback={this.recaptchaLoaded}
+                     verifyCallback={this.verifyCallback}
+                   />
 					</fieldset>
 				   </form>
 
